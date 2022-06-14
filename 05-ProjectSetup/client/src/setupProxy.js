@@ -11,6 +11,6 @@ const proxy = require('http-proxy-middleware')
     
 module.exports = craServer => {
   // We can have as many app.use() in here
-  craServer.use('/auth', proxy({ 'target': 'http://localhost:5000' }))
-  craServer.use('/api', proxy({ 'target': 'http://localhost:5000' }))
+  craServer.use('/auth', proxy({ 'target': 'http://localhost:5001' }))
+  craServer.use('/api', proxy({ 'target': 'http://localhost:5001' }))
 }
